@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Glam Beauté Thiès – Institut de beauté et spa à Grand Standing</title>
+<meta name="description" content="Ongles, massage, hammam, jacuzzi, soins du visage et maquillage à Thiès. Réservez sur WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+<nav id="nav"><a class="logo" href="#">Glam Beauté</a>
+<button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span></button>
+<div class="menu" id="menu"><a class="l" href="#services">Nos services</a><a class="l" href="#galerie">Galerie</a><a class="l" href="#apropos">À propos</a><a class="l" href="#contact">Contact</a><a class="btn" href="#rdv">Prendre rendez-vous</a></div></nav>
+<div class="heroc">
+<p class="tag">Institut de beauté et spa à Thiès</p>
+<h1>Bienvenue chez Glam Beauté</h1>
+<p class="lead">Chez nous, on prend soin de vous : ongles, massage, hammam, jacuzzi, soins du visage et maquillage, dans un cadre doux à Grand Standing.</p>
+<a class="btn" href="#rdv">Prendre rendez-vous</a>
+<p class="tint">Votre teinte du jour : <b id="cname"></b></p>
+<div class="pick" id="pick" role="group" aria-label="Choisir une teinte"></div>
+</div>
+</header>
+<div class="strip"><span id="open"></span><span>Du lundi au samedi, de 10h à 19h30</span><span>Grand Standing, Thiès</span></div>
+<main class="wrap">
+<section id="services">
+<h2>Nos services</h2>
+<p class="sub">Touchez un service pour le réserver en deux clics.</p>
+<div class="cols">
+<article class="panel p1"><h3>💅 Les ongles</h3><ul>
+<li><button type="button" data-s="Manucure"><b>Manucure</b><span>Des ongles impeccables et une finition parfaite.</span></button></li>
+<li><button type="button" data-s="Pédicure"><b>Pédicure</b><span>Hygiène, confort et une peau douce durablement.</span></button></li>
+<li><button type="button" data-s="Capsules"><b>Capsules</b><span>Élégantes et durables, pour un style soigné.</span></button></li></ul></article>
+<article class="panel p2"><h3>🛁 Spa et bien-être</h3><ul>
+<li><button type="button" data-s="Massage"><b>Massage</b><span>Tonique ou relaxant, pour apaiser le corps et l'esprit.</span></button></li>
+<li><button type="button" data-s="Gommage du corps"><b>Gommage du corps</b><span>Une peau lisse, lumineuse et délicatement parfumée.</span></button></li>
+<li><button type="button" data-s="Hammam"><b>Hammam</b><span>Éliminer les toxines et détendre les muscles.</span></button></li>
+<li><button type="button" data-s="Jacuzzi"><b>Jacuzzi</b><span>Un moment de détente absolue.</span></button></li></ul></article>
+<article class="panel p3"><h3>💄 Beauté</h3><ul>
+<li><button type="button" data-s="Soins du visage"><b>Soins du visage</b><span>Adaptés à chaque peau, pour un teint éclatant.</span></button></li>
+<li><button type="button" data-s="Maquillage"><b>Maquillage</b><span>Professionnel et sur mesure, pour vos grandes occasions.</span></button></li>
+<li><button type="button" data-s="Perruques et locks"><b>Perruques et locks</b><span>Locks, sister locks, microlocks et perruques.</span></button></li></ul></article>
+</div></section>
+
+<section id="galerie">
+<h2>Un aperçu de chez nous</h2>
+<p class="sub">Touchez une photo pour l'agrandir.</p>
+<div class="tabs" id="tabs" role="group" aria-label="Filtrer la galerie"><button type="button" class="on" data-f="all">Tout</button><button type="button" data-f="spa">Spa et soins</button><button type="button" data-f="ongles">Ongles</button><button type="button" data-f="makeup">Maquillage</button></div>
+<div class="gal" id="gal">
+<figure data-c="spa"><button type="button" aria-label="Agrandir : Soins corporels : massage du dos, maquillage et soin du visage"><img loading="lazy" src="images/spa-1.jpg" alt="Soins corporels : massage du dos, maquillage et soin du visage"></button></figure>
+<figure data-c="ongles"><button type="button" aria-label="Agrandir : Onglerie : ongles nude en amande"><img loading="lazy" src="images/ongles-1.jpg" alt="Onglerie : ongles nude en amande"></button></figure>
+<figure data-c="makeup"><button type="button" aria-label="Agrandir : Maquillage de soirée, yeux nacrés et lèvres prune"><img loading="lazy" src="images/maquillage-1.jpg" alt="Maquillage de soirée, yeux nacrés et lèvres prune"></button></figure>
+<figure data-c="spa"><button type="button" aria-label="Agrandir : Massage à l'huile et gommage du corps"><img loading="lazy" src="images/spa-2.jpg" alt="Massage à l'huile et gommage du corps"></button></figure>
+<figure data-c="ongles"><button type="button" aria-label="Agrandir : Manucure : ongles chocolat et rose nude"><img loading="lazy" src="images/ongles-2.jpg" alt="Manucure : ongles chocolat et rose nude"></button></figure>
+<figure data-c="makeup"><button type="button" aria-label="Agrandir : Maquillage professionnel pour toutes les occasions"><img loading="lazy" src="images/maquillage-2.jpg" alt="Maquillage professionnel pour toutes les occasions"></button></figure>
+<figure data-c="spa"><button type="button" aria-label="Agrandir : Hammam et soins du visage"><img loading="lazy" src="images/spa-3.jpg" alt="Hammam et soins du visage"></button></figure>
+<figure data-c="ongles"><button type="button" aria-label="Agrandir : Pédicure french sur sandales bordeaux"><img loading="lazy" src="images/ongles-3.jpg" alt="Pédicure french sur sandales bordeaux"></button></figure>
+<figure data-c="makeup"><button type="button" aria-label="Agrandir : Maquillage sur mesure"><img loading="lazy" src="images/maquillage-3.jpg" alt="Maquillage sur mesure"></button></figure>
+<figure data-c="spa"><button type="button" aria-label="Agrandir : Jacuzzi"><img loading="lazy" src="images/spa-4.jpg" alt="Jacuzzi"></button></figure>
+<figure data-c="ongles"><button type="button" aria-label="Agrandir : Capsules rose nude et rouge"><img loading="lazy" src="images/ongles-4.jpg" alt="Capsules rose nude et rouge"></button></figure>
+<figure data-c="spa"><button type="button" aria-label="Agrandir : Massage du dos, séance de sérénité"><img loading="lazy" src="images/spa-5.jpg" alt="Massage du dos, séance de sérénité"></button></figure>
+<figure data-c="ongles"><button type="button" aria-label="Agrandir : Ongles nude, mains soignées"><img loading="lazy" src="images/ongles-5.jpg" alt="Ongles nude, mains soignées"></button></figure>
+</div>
+<dialog id="lb" aria-label="Photo agrandie"><img alt=""></dialog>
+</section>
+
+<section id="rdv">
+<h2>Réservez votre moment</h2>
+<p class="sub">Dites-nous ce qui vous ferait plaisir, on vous répond sur WhatsApp.</p>
+<div class="book">
+<label>Votre prénom<input id="nom" autocomplete="given-name"></label>
+<label>Ce que vous souhaitez<select id="svc"><option>Manucure</option><option>Pédicure</option><option>Capsules</option><option>Massage</option><option>Gommage du corps</option><option>Hammam</option><option>Jacuzzi</option><option>Soins du visage</option><option>Maquillage</option><option>Perruques et locks</option></select></label>
+<label>Jour souhaité<input id="jour" placeholder="Ex : samedi après-midi"></label>
+<a class="btn" id="go" href="#" target="_blank" rel="noopener">Envoyer sur WhatsApp</a>
+<p class="help">Rien ne s'ouvre ? Appelez le <a href="tel:+221776337105">77 633 71 05</a>.</p>
+</div></section>
+
+<section id="apropos">
+<h2>À propos</h2>
+<p class="ab">Votre mise en beauté commence ici. Dans un cadre doux, pensé pour vous détendre et vous sublimer. Ongles, spa, maquillage et soins du corps se retrouvent sous le même toit, au quartier Grand Standing de Thiès.</p>
+</section>
+
+<section id="contact" class="info">
+<div><h3>Nous trouver</h3><p>Grand Standing, Thiès, près du rond-point, derrière la pharmacie Khadim Rassoul, en face de l'école Sainte Bernadette.</p><p><a href="https://www.google.com/maps/search/?api=1&query=Glam+beaut%C3%A9+Thi%C3%A8s" target="_blank" rel="noopener">Ouvrir dans Google Maps</a></p></div>
+<div><h3>Horaires</h3><p>Du lundi au samedi, de 10h00 à 19h30.</p></div>
+<div><h3>Nous écrire</h3><p><a href="tel:+221776337105">77 633 71 05</a></p><p><a href="https://www.instagram.com/glam_beaute_thies" target="_blank" rel="noopener">Instagram @glam_beaute_thies</a></p><p>Facebook : Glam Beauté Thiès</p></div>
+</section>
+</main>
+<a class="chat" href="https://wa.me/221776337105?text=Bonjour%20Glam%20Beaut%C3%A9%2C%20j%27aimerais%20un%20renseignement." target="_blank" rel="noopener" aria-label="Écrire sur WhatsApp"><span>Bonjour ! Comment puis-je vous aider ?</span><i><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H9l-5 4v-4H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/></svg></i></a>
+<footer>© Glam Beauté Thiès – Grand Standing</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
